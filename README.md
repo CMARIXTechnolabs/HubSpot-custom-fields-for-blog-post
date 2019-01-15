@@ -4,7 +4,7 @@
 
 
 ## Description ##
-This guide helps to create a custom field for a blog post of the HubSpot & how to get custom fields value in Huble code.
+This guide helps to create a custom field for a blog post of the HubSpot & how to get custom fields value in Hubble code.
 
 #### A. Create custom field ####
 **Step 1**: Create a custom module and Add custom option like boolean.
