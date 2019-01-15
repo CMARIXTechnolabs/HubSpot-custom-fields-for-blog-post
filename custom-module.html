@@ -1,0 +1,17 @@
+<div class="block">
+  <div class="widget-module">
+  <h3>Custom Options</h3>
+  {% set rec_posts = blog_recent_posts('default', 200) %}
+  <ul class="hs-hash-929959063">
+  {% for rec_post in rec_posts %}
+    {% set current_event = blog_post_by_id(rec_post.id) %}
+    {% for w in current_event.allWidgets %}
+     {% if w.body.custom_option == true %}
+        <li class="hs-postlisting-item"><div class="post-title"><a href="{{ rec_post.absolute_url }}">{{rec_post.name}}</a>
+    </div></li> 
+     {% endif %} 
+    {% endfor %}
+  {% endfor %}
+  </ul>
+  </div>
+</div>
